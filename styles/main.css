@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Alkaline';
+      font-style: normal;
+      font-weight: 600;
+      font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+      src: url('/fonts/AlkalineTest-Demi.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+        src: url('/fonts/GeneralSans-Regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+        src: url('/fonts/GeneralSans-Bold.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Thunder';
+        font-style: normal;
+        font-weight: 600;
+        font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+        src: url('/fonts/Thunder-SemiBoldLC.otf') format('opentype');
+      }
+      @font-face {
+        font-family: 'Thunder';
+        font-style: normal;
+        font-weight: 200;
+        font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+        src: url('/fonts/Thunder-LightLC.ttf') format('truetype');
+      }
+  }

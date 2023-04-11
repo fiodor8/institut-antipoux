@@ -1,0 +1,508 @@
+---
+import Button from '../components/Button.astro';
+import LocationRow from '../components/LocationRow.astro';
+import LocationCard from '../components/LocationCard.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
+import Layout from '../layouts/Layout.astro';
+
+import facebook_logo from "../images/facebook.svg"
+import instagram_logo from "../images/instagram.svg"
+import google_logo from "../images/google.svg"
+
+import ASPIRATEUR_TAG from "../images/ASPIRATEUR-TAG.png"
+import ASPIRATEUR from "../images/ASPIRATEUR.png"
+import LOTION from "../images/LOTION.png"
+import PEIGNE from "../images/PEIGNE.png"
+import POUX from "../images/POUX.png"
+
+import LOGO from "../images/logo.svg"
+import LOGO_WHITE from "../images/logo-white.svg"
+
+import AU_NATUREL_TAG from "../images/AU-NATUREL-TAG.png"
+import ANTI_POUX_TAG from "../images/ANTI-POUX-TAG.png"
+import MIN_30_TAG from "../images/30MIN-TAG.png"
+
+import { Astronav, MenuItems, MenuIcon} from "astro-navbar";
+
+---
+
+<Layout title="L'institut Anti-Poux | Un traitement efficace garanti 7 jours">
+	<main class="text-zinc-950" >
+		<div class=" px-4 py-4 bg-brand-100 border-b-2 border-zinc-950">
+			<Astronav>
+			  <div class="flex justify-between max-w-screen-lg mx-auto">
+				<div class="lg:flex items-center justify-between w-full">
+						<img src={LOGO} alt="Logo" class="h-10 lg:h-8">
+					<MenuItems class="hidden lg:flex">
+						<ul class="lg:flex-row flex flex-col lg:gap-4 gap-2 mt-4 lg:mt-0">
+							<li class="">
+								<Button
+								title="A Propos"
+								action="#a_propos"
+								>
+								</Button>
+							</li>
+							<li>
+								<Button
+								title="Notre Méthode"
+								action="#methode"
+								>
+								</Button>
+							</li>
+							<li>
+								<Button
+								title="Nos Tarifs"
+								action="#tarifs"
+								>
+								</Button>
+							</li>
+							<li>
+								<Button
+								title="✸ Réserver"
+								action="#reserver"
+								>
+								</Button>
+							</li>
+						</ul>
+					</MenuItems>
+				</div>
+				<MenuIcon class="w-8 h-8 text-zinc-950 lg:hidden" />
+			  </div>
+			  <!--
+			  // add `hidden` class by default for mobile
+			  // `lg:flex` is to make it visible in desktop
+			  // You may use custom CSS instead.
+			  -->
+
+			</Astronav>
+		  </div>
+
+		<section class="pt-24 pb-16 w-full bg-white">
+			<div class="max-w-screen-lg mx-auto">
+				<h1 class="font-thunder text-[8rem] sm:text-[10rem] mx-auto text-center uppercase font-bold leading-none relative">
+					<span class="relative">
+						<span class="absolute top-full left-0 -translate-x-1/3 -translate-y-2/3 -rotate-12">
+							<img src={MIN_30_TAG } alt="30 min" class="sm:h-36 h-32">
+						</span>
+						Problème<br>
+					</span>
+					<span class="text-brand-100 absolute w-full h-full top-0 right-0 flex justify-center items-center z-0">
+						<span data-text="de" class="font-alkaline -translate-y-[0.33em] text-[0.85em] normal-case italic stroke-behind relative -rotate-6">
+							de
+						</span>
+					</span>
+					<span class="text-[12.2rem] sm:text-[15.2rem] leading-[0.8]">
+						poux?
+					</span>
+					
+				</h1>
+				<div class="mx-auto justify-center flex pt-4 sm:pt-6 hover:scale-105 transition">
+					<a href="#a_propos">
+						<svg class="sm:w-28 w-16 stroke-zinc-950 border-0.5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 6 16 5"> <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/> </svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<section  class="py-8 sm:py-12 bg-brand-100 border-t-2 border-b-2 border-zinc-950 px-4">
+			<div id="a_propos" class="bg-white rounded-3xl max-w-screen-lg sm:mx-auto p-10 border-2 border-zinc-950">
+				<div class="flex justify-between mb-12 sm:mb-18">
+					<div>
+						<img src={ASPIRATEUR_TAG} alt="ASPIRATEUR" class="h-56 sm:h-72 mx-0 sm:mx-8">
+					</div>
+					<div>
+						<img src={LOGO} alt="Logo" class="h-10 sm:h-16">
+					</div>
+				</div>
+				<h1 class="font-thunder text-6xl sm:text-8xl font-bold leading-[0.85] sm:leading-[0.85] uppercase relative mb-20 sm:mb-24">
+					Nous vous débarrassonsdes <span class="whitespace-nowrap">poux et des lentes</span><br>
+					<span class="absolute w-full md:w-2/3 h-full top-0 right-0 flex flex-col justify-end sm:items-start items-end">
+						<span data-text="en une seule fois!" class="font-alkaline text-brand-100 stroke-behind text-5xl md:text-7xl italic capitalize translate-y-9 -rotate-6 whitespace-nowrap">
+							en une seule fois!
+						</span>
+					</span>
+				</h1>
+				<div class="sm:grid sm:grid-cols-3 mb-8">
+					<div class=""></div>
+					<div class="col-span-2 text-base sm:text-lg">
+						Le temps de traitement varie de 30 min à 1:30 heures en fonction de la longueur des cheveux et de la contamination. Equipés d’un matériel professionnel dernier cri pour traiter les poux, nous disposons d’une machine «Aspirateur à poux» made in USA. L’efficacité de nos produits est cliniquement prouvée. Notre méthode utilise des produits aux actifs naturels, sans insecticides chimiques et sans paraben. Le traitement est garanti 7&nbsp;jours.
+					</div>
+				</div>
+				<div class="flex gap-2 flex-wrap">
+					<p class="whitespace-nowrap px-2 border-2 border-zinc-950 rounded-full text-sm font-bold">
+						Et fini les poux de 30 min
+					</p>
+					<p class="whitespace-nowrap px-2 border-2 border-zinc-950 rounded-full text-sm font-bold">
+						Une seule fois
+					</p>
+					<p class="whitespace-nowrap px-2 border-2 border-zinc-950 rounded-full text-sm font-bold">
+						Est garanti 7 jours
+					</p>
+					<p class="whitespace-nowrap px-2 border-2 border-zinc-950 rounded-full text-sm font-bold">
+						Cliniquement prouvée
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="methode" class="bg-white py-12 lg:py-24 px-4 sm:px-8 ">
+			<div class="max-w-screen-lg sm:mx-auto mx-4 ">
+				<div class="lg:grid sm:grid-cols-3 flex flex-col-reverse sm:mb-24 mb-12">
+					<div class=" col-span-2">
+						<h2 class="font-thunder text-6xl sm:text-8xl font-bold leading-[0.85] sm:leading-[0.85] mb-2">
+							<span class="relative inline-flex w-9 h-9 sm:w-14 sm:h-14 italic mr-2">
+								<span class="absolute w-full h-full bg-zinc-950 rounded-full translate-x-1 translate-y-1"></span>
+								<span class="absolute w-full h-full flex justify-center items-center rounded-full bg-brand-100">
+									1
+								</span>
+							</span> 
+							ASPIRATEUR <span class="whitespace-nowrap relative">
+								ANTI-POUX
+							</span>
+						</h2>
+						<p class="text-base sm:text-xl">
+							Nous passons notre machine brevetée «l’Aspirateur à poux» sur&nbsp;l’ensemble de la chevelure afin d’éradiquer les&nbsp;poux. Cette&nbsp;étape est sans douleur et n’abîme <span class="whitespace-nowrap">pas les cheveux.</span>
+						</p>
+					</div>
+					<div class="text-right">
+						<img src={ASPIRATEUR} alt="ASPIRATEUR" class="h-64 sm:h-80 lg:mx-auto">
+					</div>
+				</div>
+				<div class="lg:grid sm:grid-cols-3 flex flex-col sm:mb-24 mb-12">
+					<div class="">
+						<img src={LOTION} alt="LOTION" class="h-64 sm:h-80 lg:mx-auto">
+					</div>
+					<div class="col-span-2">
+						<h2 class="font-thunder text-6xl sm:text-8xl font-bold leading-[0.85] sm:leading-[0.85] mb-2 relative">
+							<span class="whitespace-nowrap">
+							<span class="relative inline-flex w-9 h-9 sm:w-14 sm:h-14 italic mr-2">
+								<span class="absolute w-full h-full bg-zinc-950 rounded-full translate-x-1 translate-y-1"></span>
+								<span class="absolute w-full h-full flex justify-center items-center rounded-full bg-brand-100">
+									2
+								</span>
+							</span> 
+							APPLICATION DE</span> <span class="whitespace-nowrap relative">
+								LA LOTION ANTI-POUX
+								<span class="absolute right-0 top-0 aspect-square h-24 sm:h-36 translate-x-2/3 -translate-y-2/3">
+									<img src={AU_NATUREL_TAG} alt="Au Naturel" class="">
+								</span>
+							</span>
+							
+						</h2>
+						<p class="text-base sm:text-xl">
+							Nous appliquons notre lotion traitante naturelle et sans risque pour les cheveux. Nos&nbsp;produits aux actifs naturels et sans insecticides chimiques. À&nbsp;la fin du traitement les cheveux sont propres, lavés et secs.
+						</p>
+					</div>
+				</div>
+				<div class="lg:grid sm:grid-cols-3 flex flex-col-reverse sm:mb-24 mb-12">
+					<div class="col-span-2">
+						<h2 class="font-thunder text-6xl sm:text-8xl font-bold leading-[0.85] sm:leading-[0.85] mb-2">
+							<span class="relative inline-flex w-9 h-9 sm:w-14 sm:h-14 italic mr-2">
+								<span class="absolute w-full h-full bg-zinc-950 rounded-full translate-x-1 translate-y-1"></span>
+								<span class="absolute w-full h-full flex justify-center items-center rounded-full bg-brand-100">
+									3
+								</span>
+							</span> 
+							AVÉRIFICATION <span class="whitespace-nowrap">AU PEIGNE FIN</span>
+						</h2>
+						<p class="text-base sm:text-xl">
+							Nous vérifions ensuite avec précaution qu’aucun pou ni lente ne subsiste à l’aide du peigne fin, mèche par mèche afin de vous garantir 100% d’efficacité. Vous pouvez, si vous le souhaitez, à la fin du traitement voir la petite récolte
+						</p>
+					</div>
+					<div class="">
+						<img src={PEIGNE} alt="PEIGNE" class="h-64 sm:h-80 lg:mx-auto">
+					</div>
+				</div>
+				<div class="lg:grid sm:grid-cols-3 flex flex-col lg:mb-0 mb-12">
+					<div class="">
+						<img src={POUX} alt="POUX" class="h-64 sm:h-80 lg:mx-auto">
+					</div>
+					<div class="col-span-2">
+						<h2 class="font-thunder text-6xl sm:text-8xl font-bold leading-[0.85] sm:leading-[0.85] mb-2">
+							<span class="relative inline-flex w-9 h-9 sm:w-14 sm:h-14 italic mr-2">
+								<span class="absolute w-full h-full bg-zinc-950 rounded-full translate-x-1 translate-y-1"></span>
+								<span class="absolute w-full h-full flex justify-center items-center rounded-full bg-brand-100">
+									4
+								</span>
+							</span> 
+							TRAITEMENT <span class="whitespace-nowrap">DE LA MAISON</span> <span class="whitespace-nowrap">ET ENVIRONNEMENT</span>
+						</h2>
+						<div class="text-base sm:text-xl">
+							Suite à votre passage à l’Institut Anti-Poux il vous appartiendra de:
+									<ul class=" ml-6 list-decimal list-outside text-base sm:text-xl">
+										<li class="my-1">Laver à 60° en machine: draps, serviettes et habits portés <span class="whitespace-nowrap">ces 2 derniers joursou.</span></li>
+										<li class="my-1">Enfermer dans un sac pendant 2 jours tout ce qui ne passe pas à la machine à 60°.</li>
+										<li class="my-1">Brosses à cheveux, barrettes, élastiques, doudou/autre : mettre au congélateur <span class="whitespace-nowrap">toute la nuit.</span></li>
+										<li class="my-1">Canapés (même en cuir), appuie-tête de voiture, tête de lit, tout ce qui n’est pas déhoussable: il vous faudra passer l’aspirateur ou une brosse adhésive sur toute la surface, puis vaporiser <span class="whitespace-nowrap">du spray répulsif anti-poux.</span></li>
+									</ul>
+								</div>
+					</div>
+				</div>
+				<!--
+				<div class="text-center">
+					<h2 class="font-thunder text-6xl sm:text-8xl font-bold mb-2 leading-[0.85] sm:leading-[0.85]">
+						GARANTIE
+						<span class="relative inline-flex w-9 h-9 sm:w-14 sm:h-14 italic mr-2">
+							<span class="absolute w-full h-full bg-zinc-950 rounded-full translate-x-1 translate-y-1"></span>
+							<span class="absolute w-full h-full flex justify-center items-center rounded-full bg-brand-100">
+								7
+							</span>
+						</span> 
+						JOURS
+					</h2>
+					<p class="text-base sm:text-xl max-w-screen-md mx-auto">
+						Notre traitement élimine 100% des poux et des lentes en 1 seule fois et est garanti 7&nbsp;jours. Nous vous remettons une fiche conseil pour traiter la maison afin d’éviter la ré-apparition des poux.
+						Nous proposons également à la vente une gamme de produits répulsifs pour traiter l’environnement: shampoings anti-poux, brosses à cheveux, élastiques anti-poux.
+					</p>
+				</div>
+				 -->
+			</div>
+		</section>
+
+		<section id="tarifs" class="px-4 py-12 sm:py-24 bg-brand-100 border-t-2 border-b-2 border-zinc-950">
+			<div class="max-w-screen-lg mx-auto">
+				<h2 class="font-thunder text-8xl uppercase font-bold leading-[0.85] tracking-tight text-center w-full mb-8">
+					nos tarifs
+				</h2>
+				<div class="flex flex-col md:flex-row justify-between gap-4">
+					<div class="p-8 pb-10 rounded-3xl border-2 border-zinc-950 w-full bg-white">
+						<h4 class="text-5xl font-thunder font-bold uppercase text-center sm:text-left mb-3">
+							TRAITEMENT <span class="whitespace-nowrap">ANTI-POUX</span>
+						</h4>
+						<ul class="flex flex-col gap-0.5 sm:gap-1">
+							<li class="flex justify-between">
+								<p>Cheveux courts</p>
+								<p>55 €</p>
+							</li>
+							<li class="flex justify-between">
+								<p>Cheveux mi-longs</p>
+								<p>65 €</p>
+							</li>
+							<li class="flex justify-between">
+								<p>Cheveux longs</p>
+								<p>75 €</p>
+							</li>
+							<li class="flex justify-between">
+								<p>Cheveux crépus</p>
+								<p>95 €</p>
+							</li>
+							<li class="flex justify-between">
+								<p>Contamination extrême</p>
+								<p>150 €</p>
+							</li>
+							<li class="flex justify-between items-end">
+								<p class="leading-tight">Majoration si forte contamination</p>
+								<p class="whitespace-nowrap">+20 €</p>
+							</li>
+						</ul>
+					</div>
+					<div class="p-8 pb-10 rounded-3xl border-2 border-zinc-950 w-full bg-white">
+						<h4 class="text-5xl font-thunder font-bold uppercase text-center sm:text-left mb-3">
+							COUPES DE CHEVEUX
+						</h4>
+						<ul class="flex flex-col gap-0.5 sm:gap-1">
+							<li class="flex justify-between">
+								<div class="leading-tight">
+									<p>Cheveux courts</p>
+									<p class="text-xs">en + du traitement anti-poux</p>
+								</div>
+								<p>15 €</p>
+							</li>
+							<li class="flex justify-between">
+								<div class="leading-tight">
+									<p>Cheveux longs</p>
+									<p class="text-xs">en + du traitement anti-poux</p>
+								</div>
+								<p>18 €</p>
+							</li>
+							<li class="flex justify-between">
+								<p>Sans traitement</p>
+								<p>20 €</p>
+							</li>
+						</ul>
+					</div>
+					<div class="p-8 pb-10 rounded-3xl border-2 border-zinc-950 w-full bg-white">
+						<h4 class="text-5xl font-thunder font-bold uppercase text-center sm:text-left mb-3">
+							Soin hydratant HD
+						</h4>
+						<ul class="flex flex-col gap-0.5 sm:gap-1">
+							<li class="flex justify-between">
+								<div class="leading-tight">
+									<p>Soin cheveux hydra HD</p>
+									<p class="text-xs">en + du traitement anti-poux</p>
+								</div>
+								<p>40 €</p>
+							</li>
+							<li class="flex justify-between">
+								<div class="leading-tight">
+									<p>Soin cheveux hydra HD</p>
+									<p class="text-xs">sans traitement anti-poux</p>
+								</div>
+								<p>50 €</p>
+							</li>
+							<li class="flex justify-between">
+								<p>Forfait coupe + Soin HD</p>
+								<p>65 €</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mt-12 auto-mx text-center">
+					<div class="my-2 font-thunder uppercase text-5xl font-bold mx-8">
+						Vous avez des doutes sur la présence de poux?
+					</div>
+					<Button
+					title="Prenez RDV pour un diagnostic!"
+					action="#reserver"
+					>
+					</Button>
+					<div class="mx-auto justify-center flex pt-4 sm:pt-6 hover:scale-105 transition">
+						
+							<svg class="sm:w-16 w-12" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 6 16 5"> <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/> </svg>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white px-4 py-12 sm:py-24">
+			<div class="max-w-screen-lg mx-auto">
+				<h2 class="font-thunder text-8xl uppercase font-bold leading-[0.85] tracking-tight text-center w-full mb-8">
+					ce que disent nos clients
+				</h2>
+				<div class=" grid md:gap-8 gap-4 md:grid-cols-2 mb-12">
+					<TestimonialCard
+						name="Roxane"
+						letter="R"
+						data_visit="Jan 2023"
+					>
+					<p>
+						J’ai attrapé des poux à cause de mes enfants et je voulais m’arracher la tête … Impossibilité de m’en sortir seule au vu de la situation. ces professionnels ont sauvé ma vie. Je suis même retournée 2 semaines après pour être certaine qu’il n’y avait plus rien et elles m’ont diagnostiqué gratuitement .
+					</p>
+					</TestimonialCard>
+					<TestimonialCard
+					name="Estelle"
+					letter="E"
+					data_visit="Feb 2022"
+				>
+				<p>
+					j'ai emmené ma nièce a l'institut et ils nous ont résolu nos problèmes en moins d'1 heure. Quelle solution! rapide, efficace - courrez-y si quiconque autour de vous a des poux, ca vous sauvera vos nerfs et des récidives!!
+				</p>
+				</TestimonialCard>
+				</div>
+				<div class="mx-auto justify-center flex gap-x-4">
+					<a href="https://www.instagram.com/institut_antipoux/" target="_blank"><img src={instagram_logo} alt="Instagram Logo" class="h-12"></a>
+					<a href="https://www.facebook.com/institutantipoux/" target="_blank"><img src={facebook_logo} alt="Facebook Logo" class="h-12"></a>
+					<a href="https://www.google.fr/maps/place/L'institut+anti-poux/@48.8537889,2.2758242,15z/data=!4m12!1m6!3m5!1s0x0:0x361ba44cdef40286!2sL'institut+anti-poux!8m2!3d48.8537889!4d2.2758242!3m4!1s0x0:0x361ba44cdef40286!8m2!3d48.8537889!4d2.2758242" target="_blank"><img src={google_logo} alt="Google Logo" class="h-14 -translate-y-1 -translate-x-1"></a>
+				</div>
+			</div>
+		</section>
+
+		<section id="reserver" class="px-4 py-12 sm:py-24 bg-brand-100 border-t-2 border-b-2 border-zinc-950">
+			<div class="max-w-screen-lg mx-auto">
+				<h2 class="font-thunder text-8xl uppercase font-bold leading-[0.85] tracking-tight text-center w-full mb-2 sm:mb-4">
+					Prendre <span class="whitespace-nowrap">Rendez-vous</span>
+				</h2>
+				<div class="w-full text-center mb-4 sm:mb-8 text-lg">
+					<p>Du Lundi au Samedi — <span class="font-bold">10:00 à 19:00 </span></p>
+					<p>Sur R.D.V</p>
+				</div>
+				<div class="w-full flex flex-col gap-y-2 sm:gap-y-4">
+					<LocationRow
+						location_title="Paris 6"
+						location_adress="15 rue d’Assas"
+						map_link="https://goo.gl/maps/LwMfqM1yhhwChQb88"
+						location_reservation_link="https://app.flexybeauty.com/l_institut-anti-poux"
+					>
+					</LocationRow>
+					<LocationRow
+						location_title="Paris 11"
+						location_adress="110 Boulevard Voltaire"
+						map_link="https://goo.gl/maps/TceA44Vr8wuCrUGa7"
+						location_reservation_link="https://app.flexybeauty.com/institut-anti-poux"
+					>
+					</LocationRow>
+					<LocationRow
+						location_title="Paris&nbsp;16"
+						location_adress="22 rue de Boulainvilliers"
+						map_link="https://goo.gl/maps/8zVUcGw7y21qoy8F7"
+						location_reservation_link="https://app.flexybeauty.com/institut-anti-poux-paris-16"
+					>
+					</LocationRow>
+					<LocationRow
+						location_title="Neuilly sur Seine"
+						location_adress="10 rue Bailly"
+						map_link="https://goo.gl/maps/hnPn3Heo5JTtVeLV8"
+						location_reservation_link="https://app.flexybeauty.com/institut-anti-poux-neuilly-sur-seine"
+					>
+					</LocationRow>
+						<LocationRow
+						location_title="Bordeaux"
+						location_adress="18 Avenue d’Arès"
+						map_link="https://goo.gl/maps/BzHZ2RTuBe8xJyEMA"
+						location_reservation_link="https://app.flexybeauty.com/institut-anti-poux-bordeaux"
+					>
+					</LocationRow>
+				</div>
+			</div>
+		</section>
+		<!--
+		<section id="connect" class="bg-white px-4 py-24">
+			<div class="flex gap-4 flex-wrap justify-center max-w-screen-lg">
+				<LocationCard
+				location_title="PARIS 6"
+            	location_adress="15 rue d’Assas 75006 Paris"
+				location_phone="09 87 35 99 39"
+				></LocationCard>
+				<LocationCard
+					location_title="PARIS 11"
+					location_adress="110 Boulevard Voltaire 75011 Paris"
+					location_phone="09 83 82 35 65"
+				></LocationCard>
+				<LocationCard
+					location_title="PARIS 16"
+					location_adress="22 rue de Boulainvilliers 75016 Paris"
+					location_phone="01 42 88 80 39"
+				></LocationCard>
+				<LocationCard
+					location_title="NEUILLY SUR SEINE"
+					location_adress="10 rue Bailly 92200 Neuilly sur Seine"
+					location_phone="01 71 01 51 00"
+				></LocationCard>
+				<LocationCard
+					location_title="BORDEAUX"
+					location_adress="118 Avenue d’Arès 33000 Bordeaux"
+					location_phone="09 81 00 77 77"
+				></LocationCard>
+			</div>
+
+		</section>
+		 -->
+		 <section class="max-w-screen-lg mx-auto px-4 my-4 flex flex-col sm:flex-row justify-between">
+			<span class="whitespace-nowrap font-medium mb-1 sm:mb-0">L'INSTITUT ANTI-POUX © 2023</span>
+			<div class="flex justify-between sm:justify-normal gap-8">
+				<a href="mailto:contact@institut-antipoux.fr">contact@institut-antipoux.fr</a>
+				<a class="underline">Mentions Légales</a>
+			</div>
+		 </section>
+	</main>
+</Layout>
+
+<style>
+.ellipse {
+	clip-path: ellipse(closest-side farthest-side);
+}
+
+.stroke-behind {  
+  	&::after {
+    	color: black;
+		content: attr(data-text);
+		position: absolute;
+		-webkit-text-stroke: 4px black;
+		left: 0;
+		z-index: -2;
+		font-size: 1em;
+    }
+}
+
+</style>

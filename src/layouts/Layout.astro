@@ -1,0 +1,30 @@
+---
+
+import '/styles/main.css';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta property="og:locale" content="fr_FR">
+		<meta name="description" content="1er centre de traitement anti-poux en France. 100% efficace en une seule fois et garanti! Prenez rendez-vous en ligne">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+</style>

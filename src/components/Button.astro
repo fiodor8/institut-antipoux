@@ -1,0 +1,9 @@
+---
+const   {   title,
+            action
+        } = Astro.props;
+---
+
+<a href={action} class="text-sm font-bold sm:text-base whitespace-nowrap mr-1 uppercase transition-colors outline outline-2 outline-zinc-950 outline-offset-2 rounded-full px-2 my-2 hover:bg-zinc-950 hover:text-white">
+    {title}
+</a>
